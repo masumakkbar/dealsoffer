@@ -1,0 +1,57 @@
+
+.big-bg-porduct-details{
+    position: relative;
+    img{
+        width: 100%;        
+    }
+}
+
+.tp-coupon-store-voucher {
+    img {
+        margin-right: 9px;
+    }
+}
+// Only for events projects 
+.tribe-tickets__rsvp-wrapper {
+    margin-bottom: 40px !important;;
+}
+.tp-advance-tab-vertical-scroll .tps-tab-content-one {
+    max-height: 565px;
+    overflow-y: scroll;
+}
+.btn-100 a.themephi_button, .w_100 a.themephi_button, .btn-100 .metform-submit-btn {
+    width: 100%;
+}
+.testimonial-hover-white:hover .elementor-testimonial-content {
+    color: #fff !important;
+}
+.testimonial-hover-white:hover .elementor-testimonial-name {
+    color: #fff !important;
+}
+.item-last-border-none .themephi-addon-events-list:last-child {
+    border-width: 0 !important;
+}
+.tp-middle-custom-reverse .themephi-addon-events .events-part {
+    gap: 20px;
+}
+.tp-middle-custom-reverse .tp-events-dynamic-wrapp .row > .col-xl-6.col-lg-12:nth-child(3) .events-part {flex-direction: row;
+}
+.tp-middle-custom-reverse .tp-events-dynamic-wrapp .row > .col-xl-6.col-lg-12:nth-child(4) .events-part {
+    flex-direction: row;
+}
+.p-mb-0 p {
+    margin-bottom: 0;
+}
+.tp-instagram-icon-wrapp:hover .instagram-hover-icon {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.tp-instagram-icon-wrapp .instagram-hover-icon {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s linear 0s;
+    transform: scale(0.8);
+}
+
+

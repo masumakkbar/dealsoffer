@@ -1,0 +1,48 @@
+:root {
+  --primaryColor: var(--primaryColor);
+  --secondaryColor: var(--primaryColor);
+}
+
+.tps-tab-advance .nav {
+  background: #F2F3F5;
+  padding: 12px 6px;
+  margin: 0;
+  margin-top: 35px;
+}
+.tps-tab-advance .nav li button {
+  border: none;
+  background: transparent;
+  border-radius: 100px;
+  padding: 8px 25px;
+  color: #0C0A0A;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
+  position: relative;
+}
+.tps-tab-advance .nav li button::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 2px;
+  width: 0;
+  content: "";
+  background: #0C0A0A;
+}
+.tps-tab-advance .nav li button.active {
+  padding-left: 70px;
+}
+.tps-tab-advance .nav li button.active::before {
+  margin-left: 25px;
+  width: 40px;
+}
+
+.tab-custom-nav .nav {
+  float: right;
+  position: relative;
+  bottom: 102px;
+  z-index: 1;
+}
+.tab-custom-nav .tab-content {
+  clear: both;
+}/*# sourceMappingURL=advance-tab.css.map */

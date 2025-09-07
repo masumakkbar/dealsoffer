@@ -1,0 +1,77 @@
+/*
+************
+*************************
+02. demo
+******************************************************* 
+*************************************************************** */
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.course {
+    &-area {
+        background: #F6FBFF;
+    }
+}
+
+.course-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .course-left {
+    width: 840px;
+    flex-shrink: 0;
+    padding: 0 180px;
+    @media #{$xl}{
+      width: 50%;
+      padding: 0 80px;
+    }
+    @media #{$lg}{
+      width: 50%;
+      padding: 0 40px;
+    }
+    @media #{$md}{
+      width: 100%;
+      padding: 0 40px;
+    }
+    @media #{$xs}{
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+  .course-right {
+    width: calc(100% - 840px);
+    display: flex;
+    flex-wrap: wrap;
+
+    @media #{$xl}{
+      width: 50%;
+    }
+    @media #{$lg}{
+      width: 50%;
+    }
+    @media #{$md}{
+      width: 100%;
+      padding: 0 40px;
+    }
+    @media #{$xs}{
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+  
+.course-navigation {
+  display: flex;
+  gap: 20px;
+}
+.course-navigation div i {
+  font-size: 24px;
+  height: 24px;
+  font-weight: 700;
+  color: #333333;
+}
+.course-navigation div {
+  width: 25px;
+  height: 25px;
+  display: block;
+}

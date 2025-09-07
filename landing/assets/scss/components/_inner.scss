@@ -1,0 +1,81 @@
+/*
+************
+*************************
+02. demo
+******************************************************* 
+*************************************************************** */
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.inner {
+    &-area {
+        background: #F6FBFF;
+        overflow: hidden;
+    }
+    &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+        &-img {
+            box-shadow: 0px 4px 10px rgba(44, 44, 44, 0.10);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+}
+
+.inner-item {
+    width: calc(25% - 23px);
+    @media #{$lg, $md}{
+        width: calc(33.3% - 20px);
+    }
+    @media #{$xs}{
+        width: calc(50% - 15px);
+    }
+  }
+  .inner-item-img {
+    width: 100%;
+  }
+.inner-tab {
+    .nav{
+        column-gap: 60px;
+        justify-content: center;
+        @media #{$md}{
+            column-gap: 40px;
+        }
+        @media #{$xs}{
+            column-gap: 30px;
+            row-gap: 10px;
+        }
+    }
+    .nav-pills .nav-link {
+        color: #4B4B4B;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+        span {
+            display: block;
+            text-align: end;
+            color: #A4A4A4;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            text-transform: capitalize;
+            line-height: 1;
+        }
+    }
+}
+.inner-tab .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+	color: var(--clr-theme-primary);
+    background-color: transparent;
+    span {
+        color: var(--clr-theme-primary);
+    }
+}
