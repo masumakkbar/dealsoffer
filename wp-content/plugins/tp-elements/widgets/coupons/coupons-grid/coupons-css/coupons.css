@@ -167,7 +167,9 @@
 .tp-coupon-item-content-wrapper.elementor-btn-postion-bottom {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
+  flex: 1;
 }
 .tp-coupon-item-content-wrapper.elementor-btn-postion-bottom .tp-coupon-button-wrapp {
   width: max-content;
