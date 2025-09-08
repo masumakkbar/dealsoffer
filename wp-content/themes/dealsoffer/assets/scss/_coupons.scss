@@ -99,12 +99,12 @@
 		height: 100%;
 		content: "";
 		background: var(--secondaryColor);
-		color: var(--whiteColor);
 		transform: translateX(-100%);
 		transition: 0.3s;
 		z-index: -1;
 	}
 	&:hover {
+		color: var(--whiteColor);
 		&::after {
 			transform: translateX(0);
   			width: 100%;
