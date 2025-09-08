@@ -72,7 +72,7 @@ if( !empty( $confirmation_hash ) ){
                             <h4 class="signup-body-title"><?php echo esc_html__('Sign Up to You', 'dealsoffer'); ?></h4>
                             <span class="signtext d-block mb-25"><?php echo esc_html__('Already have account?', 'dealsoffer'); ?> <a href="<?php echo esc_url( $login_url ); ?>"><?php echo esc_html__('Login', 'dealsoffer'); ?></a></span>
                             <?php if ( shortcode_exists( 'nextend_social_login' ) ) : ?>
-                                <span class="gbutton d-inline-block"><?php echo do_shortcode('[nextend_social_login]'); ?></span>
+                                <?php echo do_shortcode('[nextend_social_login]'); ?>
                             <?php endif; ?>
                         </div>
                         <form class="signup-body-content" method="post" action="<?php echo esc_url( $register_url ); ?>">

@@ -94,7 +94,7 @@ if ( function_exists( 'couponis_get_permalink_by_tpl' ) ) {
                             <h4 class="signup-body-title mb-25"><?php echo esc_html__('Sign In to You', 'dealsoffer'); ?></h4>
 
                             <?php if ( shortcode_exists( 'nextend_social_login' ) ) : ?>
-                                <span class="gbutton d-inline-block"><?php echo do_shortcode('[nextend_social_login]'); ?></span>
+                                <?php echo do_shortcode('[nextend_social_login]'); ?>
                             <?php endif; ?>
 
                         </div>
