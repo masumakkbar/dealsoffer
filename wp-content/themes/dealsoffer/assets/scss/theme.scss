@@ -3018,10 +3018,15 @@ input[id*=check-type] {
 }
 
 
-.coupon-box-layout-category .coupon-box-layout-item-icon {
-  min-width: 150px;
-  height: 150px;
-  border-radius: 12px;
+.coupon-box-layout-category {
+    @media (max-width: 575px) {
+        flex-wrap: wrap;
+    }
+    .coupon-box-layout-item-icon {
+        min-width: 150px;
+        height: 150px;
+        border-radius: 12px;
+    }
 }
 
 .coupon-box-layout-item {
@@ -3031,6 +3036,7 @@ input[id*=check-type] {
     border-radius: 5px;
     border: 1px solid var(--borderColor);
     box-shadow: 0 5px 3px #F4FAFF;
+    gap: 15px;
 }
 .coupon-box-layout-item-icon {
     padding: 0px 15px;
@@ -3039,7 +3045,6 @@ input[id*=check-type] {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    margin-right: 15px;
     background-color: #F4FAFF;
 }
 .coupon-box-layout-item-icon svg {
