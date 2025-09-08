@@ -8310,6 +8310,11 @@ input[id*=check-type] {
   height: 150px;
   border-radius: 12px;
 }
+@media (max-width: 575px) {
+  .coupon-box-layout-category .coupon-box-layout-item-icon {
+    flex: 1;
+  }
+}
 
 .coupon-box-layout-item {
   flex: 1;

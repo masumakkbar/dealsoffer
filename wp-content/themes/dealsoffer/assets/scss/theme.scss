@@ -3026,6 +3026,9 @@ input[id*=check-type] {
         min-width: 150px;
         height: 150px;
         border-radius: 12px;
+        @media (max-width: 575px) {
+            flex: 1;
+        }
     }
 }
 
