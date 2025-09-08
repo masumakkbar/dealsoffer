@@ -8303,6 +8303,7 @@ input[id*=check-type] {
 @media (max-width: 575px) {
   .coupon-box-layout-category {
     flex-wrap: wrap;
+    text-align: center;
   }
 }
 .coupon-box-layout-category .coupon-box-layout-item-icon {
