@@ -136,7 +136,7 @@ function dealsoffer_import_files() {
         ),
       ),
 
-      'import_preview_image_url'   => 'https://dealsoffer.themephi.net/wp-content/uploads/2025/02/screenshot.png',
+      'import_preview_image_url'   => 'https://dealsoffer.themephi.net/wp-content/uploads/2025/09/screenshot.png',
      'import_notice'              => esc_html__( 'Caution: For importing demo data please click on "Import Demo Data" button. During demo data installation please do not refresh the page.', 'dealsoffer' ),
       'preview_url'                => 'https://dealsoffer.themephi.net/',     
       
@@ -167,6 +167,12 @@ function dealsoffer_after_import_setup($selected_import) {
   update_option( 'page_on_front', $front_page_id->ID );
   update_option( 'page_for_posts', $blog_page_id->ID ); 
 
+  // Elementor settings fix — enable all CPTs
+  $cpts = get_post_types(array('public' => true), 'names');
+  update_option('elementor_cpt_support', array_values($cpts));
+  update_option('elementor_disable_color_schemes', 'yes');
+  update_option('elementor_disable_typography_schemes', 'yes');
+
   //Import Revolution Slider
   if ( class_exists( 'RevSlider' ) ) {
     $slider_array = array(
@@ -184,10 +190,5 @@ function dealsoffer_after_import_setup($selected_import) {
 add_action( 'pt-ocdi/after_import', 'dealsoffer_after_import_setup' );
 
 add_filter( 'use_widgets_block_editor', '__return_false' );
-
-
-update_option('elementor_disable_color_schemes', 'yes');
-update_option('elementor_disable_typography_schemes', 'yes');
-
 
 /* Coupons Store Functions */
