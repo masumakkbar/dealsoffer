@@ -8093,14 +8093,14 @@ Modal CSS
 }
 .store-group .store-card a .store-logo {
   border-right: 1px solid var(--borderColor);
-  padding: 15px 20px;
+  padding: 15px 15px;
 }
 .store-group .store-card a .store-logo img {
   height: 50px;
-  max-width: 90px;
+  max-width: 65px;
 }
 .store-group .store-card a .store-logo-text {
-  padding: 15px 20px;
+  padding: 15px 15px;
   display: flex;
   justify-content: space-between;
   width: 100%;
