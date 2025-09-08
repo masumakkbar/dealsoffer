@@ -112,7 +112,7 @@
   font-size: 14px;
 }
 .tp-coupon-account-wrapper .tab-content .submit-ajax-form {
-  padding: 12px 30px;
+  padding: 15px 30px;
   margin-top: 25px;
 }
 
@@ -155,6 +155,7 @@
   height: 100%;
   content: "";
   background: var(--secondaryColor);
+  color: var(--whiteColor);
   transform: translateX(-100%);
   transition: 0.3s;
   z-index: -1;
