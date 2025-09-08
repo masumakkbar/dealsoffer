@@ -2845,6 +2845,9 @@ Modal CSS
         flex: 1;
         label {
             font-size: 12px;
+            @media (max-width: 480px) {
+                font-size: 11px;
+            }
             i {
                 font-size: 15px;
             }
@@ -2866,6 +2869,9 @@ Modal CSS
             border: 1px solid var(--borderColor);
             cursor: pointer;
             text-align: center;
+            @media (max-width: 480px) {
+               padding: 15px 5px;
+            }
             i {
                 display: block;
                 margin-bottom: 10px;

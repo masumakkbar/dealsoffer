@@ -8142,6 +8142,11 @@ Modal CSS
 .search-filter .coupon_types_item label {
   font-size: 12px;
 }
+@media (max-width: 480px) {
+  .search-filter .coupon_types_item label {
+    font-size: 11px;
+  }
+}
 .search-filter .coupon_types_item label i {
   font-size: 15px;
 }
@@ -8153,6 +8158,11 @@ Modal CSS
   border: 1px solid var(--borderColor);
   cursor: pointer;
   text-align: center;
+}
+@media (max-width: 480px) {
+  .search-filter .form-group label.search-type {
+    padding: 15px 5px;
+  }
 }
 .search-filter .form-group label.search-type i {
   display: block;
