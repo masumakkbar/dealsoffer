@@ -325,7 +325,7 @@ $pagination = paginate_links(
                     <div class="search-content">
 						<div class="white-block search-header">
 							<div class="white-block-content">
-								<div class="flex-wrap flex-always d-flex align-items-center justify-content-between mb-15">
+								<div class="flex-wrap flex-always d-flex align-items-center justify-content-between mb-15 gap-3">
 									<div class="flex-left header-alike">
                                         <?php
                                         echo esc_html__( 'Found', 'dealsoffer' ) . ' ' . $coupons->found_posts . ' ' . 
