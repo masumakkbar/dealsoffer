@@ -69,36 +69,36 @@ if( !empty( $confirmation_hash ) ){
                     <div class="signup-wrapper-body">
                         <div class="signup-body-header text-center mb-45">
                             <span class="signup-body-subtitle"><?php echo esc_html__('Start For Free', 'dealsoffer'); ?></span>
-                            <h4 class="signup-body-title"><?php echo esc_html__('Sign Up to DealsOffer', 'dealsoffer'); ?></h4>
+                            <h4 class="signup-body-title"><?php echo esc_html__('Sign Up to You', 'dealsoffer'); ?></h4>
                             <span class="signtext d-block mb-25"><?php echo esc_html__('Already have account?', 'dealsoffer'); ?> <a href="<?php echo esc_url( $login_url ); ?>"><?php echo esc_html__('Login', 'dealsoffer'); ?></a></span>
                             <?php if ( shortcode_exists( 'nextend_social_login' ) ) : ?>
-                                <span class="gbutton d-inline-block"><?php echo do_shortcode('[nextend_social_login provider="facebook,google"]'); ?></span>
+                                <span class="gbutton d-inline-block"><?php echo do_shortcode('[nextend_social_login]'); ?></span>
                             <?php endif; ?>
                         </div>
                         <form class="signup-body-content" method="post" action="<?php echo esc_url( $register_url ); ?>">
                             <div class="sign-single-input ">
-                                <label>E-mail</label>
+                                <label><?php echo esc_html__('E-mail', 'dealsoffer'); ?></label>
                                 <div class="sign-input mb-15">
                                     <input type="email" name="email" id="email" placeholder="jhonstudent@gmail.com" data-validation="required|email"  data-error="<?php esc_attr_e( 'Email is empty or invalid', 'dealsoffer' ); ?>">
                                     <i class="far fa-envelope"></i>
                                 </div>
                             </div>
                             <div class="sign-single-input mb-15">
-                                <label>Username</label>
+                                <label><?php echo esc_html__('Username', 'dealsoffer'); ?></label>
                                 <div class="sign-input">
                                     <input type="text" name="username" id="username" placeholder="Jhone Doe" data-validation="required"  data-error="<?php esc_attr_e( 'Insert Username', 'dealsoffer' ); ?>">
                                     <i class="far fa-user"></i>
                                 </div>
                             </div>
                             <div class="sign-single-input mb-15">
-                                <label>Password</label>
+                                <label><?php echo esc_html__('Password', 'dealsoffer'); ?></label>
                                 <div class="sign-input">
                                     <input type="password" name="password" id="password" placeholder="Password" data-validation="required|match" data-match="repeat_password" data-error="<?php esc_attr_e( 'Passwords do not match', 'dealsoffer' ); ?>">
                                     <i class="fas fa-eye show-hide-pass"></i>
                                 </div>
                             </div>
                             <div class="sign-single-input mb-15">
-                                <label>Confirm Password</label>
+                                <label><?php echo esc_html__('Confirm Password', 'dealsoffer'); ?></label>
                                 <div class="sign-input">
                                     <input type="password" name="repeat_password" id="repeat_password" placeholder="Confirm Password" data-validation="required|match" data-match="password" data-error="<?php esc_attr_e( 'Passwords do not match', 'dealsoffer' ); ?>">
                                     <i class="fas fa-eye show-hide-pass"></i>

@@ -39,11 +39,11 @@ if( function_exists( 'couponxl_recover_password_email' ) ) {
             <div class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
                 <div class="signup-wrapper">
                     <div class="signup-wrapper-header text-center">
-                        <h2 class="signup-title">Recover Password</h2>
+                        <h2 class="signup-title"><?php echo esc_html__('Recover Password', 'dealsoffer'); ?></h2>
                     </div>
                     <div class="signup-wrapper-body">
                         <div class="signup-body-header text-center">
-                            <h4 class="signup-body-title mb-15">Recover to Kidba</h4>
+                            <h4 class="signup-body-title mb-15"><?php echo esc_html__('Recover to You', 'dealsoffer'); ?></h4>
                             <?php if( !empty( $message ) ): ?>
                             <div class="white-block-content">
                                 <?php echo wp_kses_post( $message ); ?>
@@ -52,27 +52,19 @@ if( function_exists( 'couponxl_recover_password_email' ) ) {
                         </div>
                         <form method="post" action="<?php  echo esc_url( $recover_password_url ); ?>" class="signup-body-content">
                             <div class="sign-single-input mb-15">
-                                <label>Username</label>
+                                <label><?php echo esc_html__('Username', 'dealsoffer'); ?></label>
                                 <div class="sign-input">
                                     <input type="text" name="username" id="username" placeholder="<?php esc_attr_e( 'Your Username', 'dealsoffer' ); ?>" data-validation="required"  data-error="<?php esc_attr_e( 'Please input your username', 'dealsoffer' ); ?>">
                                     <i class="far fa-user"></i>
                                 </div>
                             </div>
                             <div class="sign-single-input mb-30">
-                                <label>Email</label>
+                                <label><?php echo esc_html__('Email', 'dealsoffer'); ?></label>
                                 <div class="sign-input">
                                     <input type="email" name="email" id="email" data-validation="required|email"  data-error="<?php esc_attr_e( 'Email is empty or invaid', 'dealsoffer' ); ?>" placeholder="<?php esc_attr_e( 'Your Email', 'dealsoffer' ); ?>">
                                     <i class="far fa-envelope"></i>
                                 </div>
                             </div>
-                            <!-- <div class="sign-single-input mb-25">
-                                <label>Password</label>
-                                <div class="sign-input">
-                                    <input type="password" placeholder="Password">
-                                    <i class="icofont-lock"></i>
-                                </div>
-                            </div> -->
-
                             <?php wp_nonce_field('recover','recover_field'); ?>
 
                             <div class="sign-buttons text-center">

@@ -222,7 +222,7 @@ Redux::setSection(
                 'type'      => 'color',
                 'title'     => esc_html__('Preloader Background Color', 'dealsoffer'),
                 'subtitle'  => esc_html__('Pick color', 'dealsoffer'),
-                'default'   => '#FE424B',
+                'default'   => '#F8FAFF',
                 'validate'  => 'color',
             ),
            

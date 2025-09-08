@@ -91,23 +91,23 @@ if ( function_exists( 'couponis_get_permalink_by_tpl' ) ) {
                             </div>
                             <?php endif; ?>
 
-                            <h4 class="signup-body-title mb-25"><?php echo esc_html__('Sign In to Kidba', 'dealsoffer'); ?></h4>
+                            <h4 class="signup-body-title mb-25"><?php echo esc_html__('Sign In to You', 'dealsoffer'); ?></h4>
 
                             <?php if ( shortcode_exists( 'nextend_social_login' ) ) : ?>
-                                <span class="gbutton d-inline-block"><?php echo do_shortcode('[nextend_social_login provider="facebook,google"]'); ?></span>
+                                <span class="gbutton d-inline-block"><?php echo do_shortcode('[nextend_social_login]'); ?></span>
                             <?php endif; ?>
 
                         </div>
                         <form method="post" action="<?php echo esc_url( $login_url ); ?>" class="signup-body-content">
                             <div class="sign-single-input mb-25">
-                                <label>Username</label>
+                                <label><?php echo esc_html__('Username', 'dealsoffer'); ?></label>
                                 <div class="sign-input">
                                     <input type="text" name="username" placeholder="<?php esc_attr_e( 'Your Username', 'dealsoffer' ); ?>" data-validation="required" data-error="<?php esc_attr_e( 'Please input your username', 'dealsoffer' ); ?>">
                                     <i class="far fa-user"></i>
                                 </div>
                             </div>
                             <div class="sign-single-input mb-25">
-                                <label>Password</label>
+                                <label><?php echo esc_html__('Password', 'dealsoffer'); ?></label>
                                 <div class="sign-input">
                                     <input type="password" name="password" placeholder="<?php esc_attr_e( 'Enter Password', 'dealsoffer' ); ?>"  data-validation="required"  data-error="<?php esc_attr_e( 'Please input your password', 'dealsoffer' ); ?>">
                                     <i class="fas fa-eye show-hide-pass"></i>
@@ -118,7 +118,6 @@ if ( function_exists( 'couponis_get_permalink_by_tpl' ) ) {
                                 <input type="checkbox" id="remember_me" name="remember_me">
                                 <label for="remember_me"><?php _e( 'Remember me', 'dealsoffer' ); ?></label>
                             </div>
-                            <!-- <span class="termscheck d-block"><input type="checkbox" id="terms"><label for="terms"><span></span>Remember me</label></span> -->
 
                             <div class="sign-buttons text-center mt-45">
                                 <?php wp_nonce_field('login','login_field'); ?>
