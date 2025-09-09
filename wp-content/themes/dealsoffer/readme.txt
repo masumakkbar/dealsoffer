@@ -1,5 +1,5 @@
 === Dealsoffer ===
-Contributors: Softivus
+Contributors: Themephi
 Requires at least: 4.9
 Tested up to: 6.5
 Requires PHP: 7.0
@@ -13,7 +13,7 @@ Dealsoffer is designed to be flexible, versatile and applicable to any website. 
 
 == Copyright ==
 
-Dealsoffer WordPress Theme, (C) 2024 Softivus
+Dealsoffer WordPress Theme, (C) 2024 Themephi
 Dealsoffer is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify

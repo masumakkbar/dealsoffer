@@ -18,12 +18,16 @@ wp-content/*
 !wp-content/plugins/
 wp-content/plugins/*
 !wp-content/plugins/tp-elements/
+wp-content/plugins/tp-elements/**
 !wp-content/plugins/tp-framework/
+wp-content/plugins/tp-framework/**
 
 !wp-content/themes/
 wp-content/themes/*
 !wp-content/themes/dealsoffer/
+wp-content/themes/dealsoffer/**
 !wp-content/themes/dealsoffer-child/
+wp-content/themes/dealsoffer-child/**
 
 # ignore index.php in plugins folder
 wp-content/plugins/index.php

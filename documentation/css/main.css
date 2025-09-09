@@ -1,7 +1,8 @@
 /*
-  Theme Name: eBlog - Personal Blog & Magazine WordPress Theme
-  Author: CodeSculptor
-  Description: eBlog - Personal Blog & Magazine WordPress Theme is perfect for blogging and news magazine.
+  Theme Name: Name - Multipurpose HTML Template
+  Author: mdsalim400@gmail.com
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
   Version: 1.0
 */
 
@@ -22,7 +23,7 @@
 
 
 /* 1. Theme default css */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;display=swap');
 
 html {
 	scroll-behavior: smooth;
@@ -65,7 +66,7 @@ a:focus,
 a:hover,
 .portfolio-cat a:hover,
 .footer -menu li a:hover {
-	color: #2B96CC;
+	color: #7D25EC;
 	text-decoration: none;
 }
 a,
@@ -178,7 +179,7 @@ label {
 	position: relative
 }
 .theme-overlay::before {
-	background: #1696e7 none repeat scroll 0 0;
+	background: #7D25EC none repeat scroll 0 0;
 	content: "";
 	height: 100%;
 	left: 0;
@@ -194,7 +195,7 @@ label {
 
 .btn {
 	-moz-user-select: none;
-	background: #1696e7 none repeat scroll 0 0;
+	background: #7D25EC none repeat scroll 0 0;
 	border: medium none;
 	border-radius: 2px;
 	color: #fff;
@@ -239,13 +240,13 @@ label {
 	visibility: visible;
 }
 .owl-carousel .owl-nav div:hover {
-	background: #2B96CC;
+	background: #7D25EC;
 	color: #fff
 }
 
 /* scrollUp */
 #scrollUp {
-	background: #E12454;
+	background: #FE424B;
 	height: 50px;
 	width: 50px;
 	right: 50px;
@@ -257,13 +258,13 @@ label {
 	line-height: 45px;
 }
 #scrollUp:hover {
-	background: #223645;
+	background: #7F879E;
 }
 
 
 /* header */
 .header-area {
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #EFF0F3;
 }
 .header-menu{}
 .header-menu ul {
@@ -278,12 +279,12 @@ label {
 	display: block;
 }
 .header-menu ul li:hover a{
-	color: #e12454;
+	color: #FE424B;
 }
 
 /* doc area */
 .doc-box ul.item-details {
-	background: #f6f6f6;
+	background: #F7F7F7;
 	padding: 40px;
 	margin-top: 25px;
 	padding-top: 35px;
@@ -293,10 +294,11 @@ label {
 	margin: 15px 0;
 }
 .doc-title{
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #EFF0F3;
 }
 .doc-menu {
-	background: #091B29;
+	background: #F7F7F7;
+	border-right: 1px solid #F7F7F7;
 	height: 100vh;
 	position: fixed;
 	width: 350px;
@@ -317,7 +319,7 @@ label {
 	max-width: 100%;
 }
 .doc-box h2 {
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #EFF0F3;
 	padding-bottom: 15px;
 	margin-bottom: 14px;
 	font-size: 30px;
@@ -327,7 +329,7 @@ label {
 
 }
 .doc-box a{
-	color: #e12454;
+	color: #FE424B;
 }
 .doc-box a:hover{
 	text-decoration: underline
@@ -348,13 +350,13 @@ code {
 	padding-left: 15px;
 }
 blockquote {
-	border-left: 3px solid #e12454;
+	border-left: 3px solid #FE424B;
 	font-size: 16px;
 	padding: 0 0 0 20px;
-	color: #e12454;
+	color: #FE424B;
 }
 blockquote code {
-	color: #e12454;
+	color: #FE424B;
 }
 code, cite {
 	background-color: #f0f2f4;
@@ -386,7 +388,7 @@ ul.sup-list-positive > li::before {
 }
 ul.sup-list-negative > li::before {
 	content: "\f00d";
-	color: #e12454;
+	color: #FE424B;
 	font-family: "Font Awesome 5 Pro";
 	margin-right: 13px;
 	position: relative;
@@ -394,9 +396,9 @@ ul.sup-list-negative > li::before {
 }
 
 .doc-logo img {
-	width: 200px;
+	max-width: 200px;
 }
 
-.themepure-logo{
-	width: 200px;
+.doc-box ul li {
+	font-weight: 400;
 }

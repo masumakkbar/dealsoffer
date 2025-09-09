@@ -539,7 +539,7 @@ function tp_coupons_details_metas() {
      */
     $cmb = new_cmb2_box( array(
         'id'            => 'tp_coupons_details_metas_id',
-        'title'         => __( 'Coupon Details', 'tp-framework' ),
+        'title'         => __( 'Offer Details', 'tp-framework' ),
         'object_types'  => array( 'coupon' ), // Post type
         'context'       => 'normal',
         'priority'      => 'high',
@@ -551,7 +551,7 @@ function tp_coupons_details_metas() {
     $cmb->add_field( 
         array(
             'id'                => 'ctype',
-            'name'              => esc_html__( 'Coupon Type', 'tp-framework' ),
+            'name'              => esc_html__( 'Offer Type', 'tp-framework' ),
             'type'              => 'select',
             'options'           => array(
                 '1' => esc_html__( 'Online Code', 'tp-framework' ),
@@ -566,7 +566,7 @@ function tp_coupons_details_metas() {
         array(
             'id'                => 'expire',
             'name'              => esc_html__( 'Expire Time', 'tp-framework' ),
-            'desc'              => esc_html__( 'Settings to time 00:00:00 means that coupon will expire at the start of the selected day while selection 23:59:59 means that it will be available until end of the day.', 'tp-framework' ),
+            'desc'              => esc_html__( 'Settings to time 00:00:00 means that offers will expire at the start of the selected day while selection 23:59:59 means that it will be available until end of the day.', 'tp-framework' ),
             'type'              => 'text_datetime_timestamp',
         )
     );
