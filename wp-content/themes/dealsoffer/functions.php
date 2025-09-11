@@ -959,7 +959,7 @@ if (!function_exists('couponis_list_terms_select')) {
                 $indent = str_repeat('&nbsp;&nbsp;&nbsp;', $level);
                 ?>
                 <option value="<?php echo esc_attr($term->term_id); ?>" <?php selected($selected, $term->term_id); ?>>
-                    <?php echo $indent . esc_html($term->name); ?>
+                    <?php echo wp_kses_post( $indent ) . esc_html($term->name); ?>
                 </option>
                 <?php
                 couponis_list_terms_select($taxonomy, $selected, $term->term_id, $level + 1);

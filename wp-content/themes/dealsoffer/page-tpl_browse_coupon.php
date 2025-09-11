@@ -121,7 +121,7 @@ $pagination = paginate_links(
                             <div class="widget white-block hand-picked">
                                 <div class="white-block-content">
                                     <div class="widget-title">
-                                        <h4 class="mb-0"><?php esc_html_e('Shop by Store', 'deala'); ?></h4>
+                                        <h4 class="mb-0"><?php esc_html_e('Shop by Store', 'dealsoffer'); ?></h4>
                                     </div>
                                     <div class="hand-picked-brands">
                                     <?php
@@ -156,7 +156,7 @@ $pagination = paginate_links(
                             <div class="widget white-block coupon-tags">
                                 <div class="white-block-content">
                                     <div class="widget-title">
-                                        <h4 class="mb-0"><?php esc_html_e('Popular Tags', 'deala'); ?></h4>
+                                        <h4 class="mb-0"><?php esc_html_e('Popular Tags', 'dealsoffer'); ?></h4>
                                     </div>
                                     <div class="hand-picked-tags">
                                     <?php
@@ -205,7 +205,12 @@ $pagination = paginate_links(
                                         <input type="checkbox" name="type[]" value="" id="check-type-" checked>
                                         <label for="check-type-" class="search-type">
                                             <i class="fal fa-filter"></i>
-                                            <?php esc_html_e('All ' . ucfirst( $coupon_slug ), 'dealsoffer') ?>
+                                            <?php
+                                            printf(
+                                                esc_html__( 'All %s', 'dealsoffer' ),
+                                                esc_html( ucfirst( $coupon_slug ) )
+                                            );
+                                            ?>
                                         </label>
                                     </div>
                                     <?php if (empty($coupon_types) || in_array('1', $coupon_types)): ?>
@@ -328,11 +333,14 @@ $pagination = paginate_links(
 								<div class="flex-wrap flex-always d-flex align-items-center justify-content-between mb-15 gap-3">
 									<div class="flex-left header-alike">
                                         <?php
-                                        echo esc_html__( 'Found', 'dealsoffer' ) . ' ' . $coupons->found_posts . ' ' . 
-                                            ( $coupons->found_posts == 1 
-                                                ? esc_html( ucfirst( $coupon_slug ) ) 
-                                                : esc_html( ucfirst( $coupon_slug ) . 's' ) 
-                                            );
+                                        printf(
+                                            esc_html__( 'Found %1$s %2$s', 'dealsoffer' ),
+                                            esc_html( $coupons->found_posts ),
+                                            ( $coupons->found_posts == 1
+                                                ? esc_html( ucfirst( $coupon_slug ) )
+                                                : esc_html( ucfirst( $coupon_slug ) . 's' )
+                                            )
+                                        );
                                         ?>
 									</div>
 									<div class="flex-right">

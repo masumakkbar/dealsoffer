@@ -469,8 +469,8 @@ Redux::setSection(
             array(
                 'id'       => 'enable_breadcrumb_title',
                 'type'     => 'switch',
-                'title'    => esc_html__('Enable Breadcrumb Title ?', 'deala'),
-                'subtitle' => esc_html__('You can show or hide off breadcrumb title', 'deala'),
+                'title'    => esc_html__('Enable Breadcrumb Title ?', 'dealsoffer'),
+                'subtitle' => esc_html__('You can show or hide off breadcrumb title', 'dealsoffer'),
                 'default'  => false,
                 'required'         => array('off_breadcrumb', '=', '1'),
             ),
