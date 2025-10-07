@@ -183,8 +183,8 @@ add_action( 'after_setup_theme', 'dealsoffer_setup' );
 /**
 *Custom Image Size
 */
-add_image_size( 'dealsoffer-blog-slider', 420, 365, true );
-add_image_size( 'dealsoffer-blog-sideabr', 87, 87, true );
+add_image_size( 'dealsoffer-slider', 420, 365, true );
+add_image_size( 'dealsoffer-sideabr', 87, 87, true );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
