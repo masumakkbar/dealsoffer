@@ -4,6 +4,7 @@ use Elementor\Group_Control_Box_Shadow;
 use Elementor\Group_Control_Typography;
 use Elementor\Core\Schemes\Typography;
 use Elementor\Group_Control_Border;
+use Elementor\Group_Control_Image_Size;
 use Elementor\Group_Control_Background;
 use Elementor\Group_Control_Css_Filter;
 
@@ -145,7 +146,7 @@ class Themephi_Elementor_Coupons_Grid_Widget extends \Elementor\Widget_Base {
 					'coupon_grid_source' => 'dynamic',
 				],
 			]
-		);
+		); 
 
 		$this->add_control(
 			'show_filter',
@@ -444,12 +445,24 @@ class Themephi_Elementor_Coupons_Grid_Widget extends \Elementor\Widget_Base {
 				'options' => [
                     'yes' => esc_html__('Yes', 'tp-elements'),
 					'no' => esc_html__('No', 'tp-elements'),					
-				],
-				'condition' => [
-					'coupon_style' => ['style1', 'style3'],
-				],											
+				],										
 			]
 		);
+
+		$this->add_group_control(
+            Group_Control_Image_Size::get_type(),
+            [
+                'name' => 'thumbnail',
+                'default' => 'large',
+                'separator' => 'before',
+                'exclude' => [
+                    'custom'
+                ],
+				'condition' => [
+					'image_show_hide' => 'yes',
+				], 
+            ]
+        );
 
 		$this->add_responsive_control(
             'image_or_icon_position',

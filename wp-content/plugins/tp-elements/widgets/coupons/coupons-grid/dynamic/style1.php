@@ -7,7 +7,7 @@
             <?php if( !empty( $image_src ) && $settings['image_show_hide'] == 'yes' ){ ?>
             <div class="tp-coupon-item-img">
                 <a href="<?php echo get_the_permalink(); ?>">
-                    <img src="<?php echo esc_url( $image_src ); ?>" alt="<?php echo esc_attr(get_post_meta($att, '_wp_attachment_image_alt', true)); ?>">
+                    <?php the_post_thumbnail($settings['thumbnail_size']); ?>
                 </a>
 
                 <div class="tp-coupon-meta-with-image">
