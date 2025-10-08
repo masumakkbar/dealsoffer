@@ -360,3 +360,55 @@
 .tp-coupons-store-box-content span {
   font-size: 14px;
 }
+
+.back-grey, .center-rate canvas, .center-rate .header-alike {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.center-rate {
+	position: relative;
+	width: 100%;
+	height: 220px;
+	z-index: 1;
+
+	canvas, .header-alike {
+		z-index: 1;
+	}
+}
+.success-rate.text-center.flex-wrap.flex-always {
+	justify-content: center;
+	display: flex;
+	.left-rate, .right-rate {
+		width: 50%;
+		padding-top: 20px;
+	}
+	li.single-expire.flex-wrap.flex-always {
+		display: flex;
+		align-items: center;
+	}
+}
+li.flex-wrap.flex-always {
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+
+.leading-icon {
+	padding: 10px 20px;
+	height: 100%;
+	background-color: var(--titleColor);
+	margin-right: 20px;
+	border-radius: 3px;
+	color: #fff;
+}
+.flex-right {
+	flex: 1;
+}
+p.small-action {
+	margin-bottom: 0;
+	font-size: 14px;
+}
