@@ -469,7 +469,8 @@
   width: 50%;
   padding-top: 20px;
 }
-.success-rate.text-center.flex-wrap.flex-always li.single-expire.flex-wrap.flex-always {
+
+li.single-expire.flex-wrap.flex-always {
   display: flex;
   align-items: center;
 }
