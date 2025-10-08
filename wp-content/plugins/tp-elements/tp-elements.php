@@ -2,8 +2,11 @@
 /**
  *Plugin Name: TP Elements
  * Description: Theme core addon pluign.
- * Version:     1.4
+ * Version:     1.0.0
  * Text Domain: tp-elements
+ * Author: _Themephi
+ * Author URI: https://www.themephi.net
+ * 
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

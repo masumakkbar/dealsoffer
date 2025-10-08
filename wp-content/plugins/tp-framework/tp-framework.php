@@ -1,9 +1,9 @@
 <?php
 /**
 * Plugin Name: TP Framework
-* Plugin URI: https://codecanyon.net/user/pixelaxis
+* Plugin URI: https://codecanyon.net/user/themephi
 * Description: Custom Framework plugin for page metabox
-* Version: 1.4
+* Version: 1.0.0
 * Author: _Themephi
 * Author URI: https://www.themephi.net
 */
